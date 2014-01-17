@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="weight_entry">0123456789.</string>
     <string name="app_name">Weight Tracker</string>
     <string name="weighin_name">Weigh In</string>
@@ -11,4 +12,24 @@
     <string name="on">on</string>
     <string name="save_weight">Save Weight</string>
     <string name="enter_your_weight">Enter Your Weight</string>
+    <string name="Day">Day</string>
+    <string name="Week">Week</string>
+    <string name="TwoWeek">Two Week</string>
+    <string name="Month">Month</string>
+    <string name="TwoMonths">Two Months</string>
+    <string name="ThreeMonths">Three Months</string>
+    <string name="SixMonths">Six Months</string>
+    <string name="Total">Total</string>
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
 </resources>
