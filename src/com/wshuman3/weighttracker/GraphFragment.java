@@ -62,21 +62,6 @@ public class GraphFragment extends Fragment {
 		}
 	}
 
-	/*
-	 * @Override public void onCreate(Bundle savedInstanceState) {
-	 * super.onCreate(savedInstanceState);
-	 * 
-	 * setContentView(R.layout.graph); this.sp =
-	 * PreferenceManager.getDefaultSharedPreferences(this);
-	 * 
-	 * //getParent().setProgressBarIndeterminateVisibility(true);
-	 * 
-	 * new Thread() { public void run() { getLatestWeighIns();
-	 * dataHandler.sendEmptyMessage(0); } }.start();
-	 * 
-	 * }
-	 */
-
 	private Handler dataHandler = new Handler() {
 		@Override
 		public void handleMessage(Message msg) {
@@ -153,16 +138,16 @@ public class GraphFragment extends Fragment {
 			int[] colors = new int[] { Color.BLACK };
 			PointStyle[] styles = new PointStyle[] { PointStyle.POINT };
 			this.renderer = new XYMultipleSeriesRenderer();
-			//this.renderer.setAxisTitleTextSize(14);
-			//this.renderer.setLabelsTextSize(14);
-			//this.renderer.setShowLabels(true);
-			//this.renderer.setLabelsColor(Color.BLACK);
-			//this.renderer.setAxesColor(Color.BLACK);
+			this.renderer.setAxisTitleTextSize(20);
+			this.renderer.setLabelsTextSize(20);
+			this.renderer.setShowLabels(true);
+			this.renderer.setLabelsColor(Color.BLACK);
+			this.renderer.setAxesColor(Color.BLACK);
 			this.renderer.setMarginsColor(Color.WHITE);
 			this.renderer.setShowLegend(false);
 			this.renderer.setPointSize(7f);
 			this.renderer.setAntialiasing(true);
-			//this.renderer.setMargins(new int[] { 10, 55, 35, 10 });
+			this.renderer.setMargins(new int[] { 10, 55, 35, 10 });
 			this.renderer.setApplyBackgroundColor(true);
 			this.renderer.setBackgroundColor(Color.WHITE);
 			// top,left,bottom,right
@@ -174,18 +159,19 @@ public class GraphFragment extends Fragment {
 				r.setLineWidth(5f);
 				this.renderer.addSeriesRenderer(r);
 			}
-			//this.renderer.setXTitle("Date");
-			//this.renderer.setYTitle("Weight");
+			this.renderer.setXTitle("Date");
+			this.renderer.setYTitle("Weight");
 			this.renderer.setXAxisMin(dates.get(0)[0].getTime());
 			this.renderer.setXAxisMax(dates.get(0)[length - 1].getTime());
 			this.renderer.setYAxisMin(minWeight - 5);
 			this.renderer.setYAxisMax(maxWeight + 5);
-			//this.renderer.setXLabels(5);
-			//this.renderer.setYLabels(10);
+			this.renderer.setXLabels(5);
+			this.renderer.setYLabels(10);
 			this.renderer.setDisplayValues(false);
 			this.renderer.setZoomEnabled(false, false);
-			//this.renderer.setXLabelsAlign(Align.CENTER);
-			//this.renderer.setYLabelsAlign(Align.RIGHT);
+			this.renderer.setPanEnabled(false);
+			this.renderer.setXLabelsAlign(Align.CENTER);
+			this.renderer.setYLabelsAlign(Align.RIGHT);
 
 			
 			
