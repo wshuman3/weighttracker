@@ -1,0 +1,15 @@
+<menu xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/file_backup_item"
+        android:title="@string/backup_to_file"
+        yourapp:showAsAction="never" />
+    <item
+        android:id="@+id/backup_item"
+        android:title="@string/backup_weight_data"
+        yourapp:showAsAction="never" />
+    <item
+        android:id="@+id/import_item"
+        android:title="@string/import_weight_data"
+        yourapp:showAsAction="never" />
+</menu>

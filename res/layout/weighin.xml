@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayoutWeighin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+        <EditText
+            android:id="@+id/weightinput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/weight_entry"
+            android:gravity="center"
+            android:hint="@string/enter_your_weight"
+            android:inputType="numberDecimal" >
+        </EditText>
+        <Button
+            android:id="@+id/saveWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="@string/save_weight" >
+        </Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/weightList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+    </ListView>
+
+</LinearLayout>

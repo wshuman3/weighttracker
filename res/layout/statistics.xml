@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/MainLinearLayoutStatistics" 	
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingTop="10dp">
+
+<!-- start weight statistics -->
+<ScrollView android:id="@+id/ScrollViewWeight" android:layout_height="fill_parent" android:layout_width="fill_parent">
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+<TableLayout android:id="@+id/LatestWeighInsTable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="Weight Statistics" android:stretchColumns="1,2" >
+	<TableRow android:id="@+id/LatestWeighInsTitleRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:layout_height="wrap_content" android:id="@+id/StatisticsTitle" android:text="Weight Statistics" android:layout_width="fill_parent" android:textStyle="bold" android:textSize="20dp" android:gravity="center" android:paddingTop="5dp" android:textColor="#000"></TextView>
+	</TableRow>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center">
+		<TextView android:id="@+id/DailyChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Daily Change" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp"  android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/DailyChangeResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp"  android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/WeekChange" android:layout_height="wrap_content" android:text="Weekly Change" android:layout_width="wrap_content" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp"  android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/WeekChangeResult" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp"  android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/TwoWeekChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Two Week Change" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp"  android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/TwoWeekChangeResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp"  android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/MonthChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Monthly Change" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp"  android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/MonthChangeResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/TwoMonthChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Two Month Change" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/TwoMonthChangeResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/ThreeMonthChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Three Month Change:" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/ThreeMonthChangeResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/SixMonthChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Six Month Change" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/SixMonthChangeResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:paddingBottom="2dp" android:paddingTop="2dp" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="7dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/TotalChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Change" android:textStyle="bold" android:visibility="visible" android:paddingTop="2dp" android:paddingBottom="7dp" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/TotalChangeResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:paddingTop="2dp" android:paddingBottom="7dp" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<TableRow android:id="@+id/LatestWeighInsTitleRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:layout_height="wrap_content" android:id="@+id/StatisticsTitle" android:text="Month Statistics" android:layout_width="fill_parent" android:textStyle="bold" android:textSize="20dp" android:gravity="center" android:paddingTop="5dp" android:textColor="#000"></TextView>
+	</TableRow>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/January" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="January" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/JanuaryChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/February" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="February" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/FebruaryChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/March" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="March" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/MarchChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/April" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="April" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/AprilChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/May" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="May" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/MayChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/June" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="June" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/JuneChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/July" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="July" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/JulyChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/August" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="August" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/AugustChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/September" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="September" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/SeptemberChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="2dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/October" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="October" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/OctoberChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="7dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/November" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="November" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/NovemberChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="1px" android:background="#99777777"></LinearLayout>
+	<TableRow android:id="@+id/WeightChange0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingBottom="7dp" android:paddingTop="2dp">
+		<TextView android:id="@+id/December" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="December" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="left|center_vertical" android:textSize="15dp" android:paddingLeft="20dp"></TextView>
+		<TextView android:id="@+id/DecemberChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:visibility="visible" android:textColor="#000" android:layout_gravity="right|center_vertical" android:textSize="15dp" android:paddingRight="20dp"></TextView>
+	</TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_entry">0123456789.</string>
+    <string name="app_name">Weight Tracker</string>
+    <string name="weighin_name">Weigh In</string>
+    <string name="graph_name">Graph</string>
+    <string name="statistics_name">Statistics</string>
+    <string name="backup_to_file">Backup to File</string>
+    <string name="backup_weight_data">Backup Data</string>
+    <string name="import_weight_data">Import Data</string>
+    <string name="on">on</string>
+    <string name="save_weight">Save Weight</string>
+    <string name="enter_your_weight">Enter Your Weight</string>
+</resources>
