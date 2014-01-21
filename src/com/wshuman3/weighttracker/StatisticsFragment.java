@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Map;
 
 import android.database.Cursor;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -86,124 +85,124 @@ public class StatisticsFragment extends Fragment {
     		// basic
     		((TextView)view.findViewById(R.id.DailyChangeResult)).setText(getString(weightChanges.get(0)));
     		if (weightChanges.get(0).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.DailyChangeResult)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.DailyChangeResult)).setTextColor(getResources().getColor(R.color.red));
     		else if (weightChanges.get(0).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.DailyChangeResult)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.DailyChangeResult)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.WeekChangeResult)).setText(getString(weightChanges.get(1)));
     		if (weightChanges.get(1).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.WeekChangeResult)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.WeekChangeResult)).setTextColor(getResources().getColor(R.color.red));
     		else if (weightChanges.get(1).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.WeekChangeResult)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.WeekChangeResult)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.TwoWeekChangeResult)).setText(getString(weightChanges.get(2)));
     		if (weightChanges.get(2).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.TwoWeekChangeResult)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.TwoWeekChangeResult)).setTextColor(getResources().getColor(R.color.red));
     		else if (weightChanges.get(2).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.TwoWeekChangeResult)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.TwoWeekChangeResult)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.MonthChangeResult)).setText(getString(weightChanges.get(3)));
     		if (weightChanges.get(3).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.MonthChangeResult)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.MonthChangeResult)).setTextColor(getResources().getColor(R.color.red));
     		else if (weightChanges.get(3).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.MonthChangeResult)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.MonthChangeResult)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.TwoMonthChangeResult)).setText(getString(weightChanges.get(4)));
     		if (weightChanges.get(4).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.TwoMonthChangeResult)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.TwoMonthChangeResult)).setTextColor(getResources().getColor(R.color.red));
     		else if (weightChanges.get(4).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.TwoMonthChangeResult)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.TwoMonthChangeResult)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.ThreeMonthChangeResult)).setText(getString(weightChanges.get(5)));
     		if (weightChanges.get(5).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.ThreeMonthChangeResult)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.ThreeMonthChangeResult)).setTextColor(getResources().getColor(R.color.red));
     		else if (weightChanges.get(5).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.ThreeMonthChangeResult)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.ThreeMonthChangeResult)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.SixMonthChangeResult)).setText(getString(weightChanges.get(6)));
     		if (weightChanges.get(6).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.SixMonthChangeResult)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.SixMonthChangeResult)).setTextColor(getResources().getColor(R.color.red));
     		else if (weightChanges.get(6).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.SixMonthChangeResult)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.SixMonthChangeResult)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.TotalChangeResult)).setText(getString(weightChanges.get(7)));
     		if (weightChanges.get(7).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.TotalChangeResult)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.TotalChangeResult)).setTextColor(getResources().getColor(R.color.red));
     		else if (weightChanges.get(7).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.TotalChangeResult)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.TotalChangeResult)).setTextColor(getResources().getColor(R.color.green));
     		
     		// months
     		 ((TextView)view.findViewById(R.id.JanuaryChange)).setText(getString(monthlyChanges.get(0)));
     		if (monthlyChanges.get(0).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.JanuaryChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.JanuaryChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(0).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.JanuaryChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.JanuaryChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.FebruaryChange)).setText(getString(monthlyChanges.get(1)));
     		if (monthlyChanges.get(1).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.FebruaryChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.FebruaryChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(1).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.FebruaryChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.FebruaryChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.MarchChange)).setText(getString(monthlyChanges.get(2)));
     		if (monthlyChanges.get(2).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.MarchChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.MarchChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(2).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.MarchChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.MarchChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.AprilChange)).setText(getString(monthlyChanges.get(3)));
     		if (monthlyChanges.get(3).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.AprilChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.AprilChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(3).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.AprilChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.AprilChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.MayChange)).setText(getString(monthlyChanges.get(4)));
     		if (monthlyChanges.get(4).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.MayChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.MayChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(4).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.MayChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.MayChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.JuneChange)).setText(getString(monthlyChanges.get(5)));
     		if (monthlyChanges.get(5).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.JuneChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.JuneChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(5).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.JuneChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.JuneChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.JulyChange)).setText(getString(monthlyChanges.get(6)));
     		if (monthlyChanges.get(6).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.JulyChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.JulyChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(6).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.JulyChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.JulyChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.AugustChange)).setText(getString(monthlyChanges.get(7)));
     		if (monthlyChanges.get(7).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.AugustChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.AugustChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(7).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.AugustChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.AugustChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.SeptemberChange)).setText(getString(monthlyChanges.get(8)));
     		if (monthlyChanges.get(8).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.SeptemberChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.SeptemberChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(8).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.SeptemberChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.SeptemberChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.OctoberChange)).setText(getString(monthlyChanges.get(9)));
     		if (monthlyChanges.get(9).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.OctoberChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.OctoberChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(9).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.OctoberChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.OctoberChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.NovemberChange)).setText(getString(monthlyChanges.get(10)));
     		if (monthlyChanges.get(10).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.NovemberChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.NovemberChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(10).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.NovemberChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.NovemberChange)).setTextColor(getResources().getColor(R.color.green));
     		
     		((TextView)view.findViewById(R.id.DecemberChange)).setText(getString(monthlyChanges.get(11)));
     		if (monthlyChanges.get(11).compareTo(zero) < 0)
-    			((TextView)view.findViewById(R.id.DecemberChange)).setTextColor(Color.RED);
+    			((TextView)view.findViewById(R.id.DecemberChange)).setTextColor(getResources().getColor(R.color.red));
     		else if (monthlyChanges.get(11).compareTo(zero) > 0)
-    			((TextView)view.findViewById(R.id.DecemberChange)).setTextColor(Color.GREEN);
+    			((TextView)view.findViewById(R.id.DecemberChange)).setTextColor(getResources().getColor(R.color.green));
     	}
     } 
     
