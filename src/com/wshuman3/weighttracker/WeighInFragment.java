@@ -5,6 +5,9 @@ import java.math.RoundingMode;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -12,6 +15,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -44,6 +49,14 @@ public class WeighInFragment extends Fragment {
 		});
 		 
 		listView = (ListView) view.findViewById(R.id.weightList);
+		listView.setOnItemLongClickListener(new OnItemLongClickListener() {
+			@Override
+			public boolean onItemLongClick(AdapterView<?> arg0, View arg1,
+					int position, long id) {
+				deleteWeightFromList(id);
+				return false;
+			}
+		});
 		  
 		DBAdapter db = new DBAdapter(getActivity());
 		db.open();
@@ -109,5 +122,26 @@ public class WeighInFragment extends Fragment {
 		
 	}
 	
-
+	private void deleteWeightFromList(final long id) {
+		AlertDialog alertDialog = new AlertDialog.Builder(getActivity()).create();
+		alertDialog.setTitle("Delete Weight");
+		alertDialog.setMessage("Are you sure you want to delete this item?");
+		alertDialog.setButton(Dialog.BUTTON_POSITIVE, "OK",new DialogInterface.OnClickListener() {
+		   public void onClick(DialogInterface dialog, int which) {
+			   DBAdapter db = new DBAdapter(getActivity());
+			   db.open();
+			   db.deleteWeight(id);
+			   adapter.changeCursor(db.getAllWeights(100, "desc"));
+			   db.close();
+			   dialog.dismiss();
+		   }
+		});
+		alertDialog.setButton(Dialog.BUTTON_NEGATIVE, "Cancel",new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				 dialog.dismiss();
+			}
+		});
+		alertDialog.show();
+	}
 }
