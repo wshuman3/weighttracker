@@ -197,7 +197,7 @@ public class GraphFragment extends Fragment {
 
 	}
 
-	private void getLatestWeighIns() {
+	private synchronized void getLatestWeighIns() {
 
 		this.weights = new ArrayList<BigDecimal>();
 		this.weightdates = new ArrayList<Date>();

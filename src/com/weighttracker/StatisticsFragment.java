@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,7 +54,7 @@ public class StatisticsFragment extends Fragment {
 		}
 	}
 	
-    private synchronized void refreshData() {
+    private void refreshData() {
     	
     	this.dates = new ArrayList<Date>();
     	this.weights = new ArrayList<BigDecimal>();
@@ -63,9 +64,13 @@ public class StatisticsFragment extends Fragment {
 	    	
     	new Thread() {
         	public void run() {
-        		weightChanges = getWeightStatistics();
-        		monthlyChanges = getMonthStatistics();
-        		refreshHandler.sendEmptyMessage(0);
+        		try {
+        			weightChanges = getWeightStatistics();
+        			monthlyChanges = getMonthStatistics();
+        			refreshHandler.sendEmptyMessage(0);
+        		} catch (Exception e) {
+        			Log.e(getTag(), "Error refeshing data", e);
+        		}
         	}
         }.start();
 		
@@ -80,7 +85,7 @@ public class StatisticsFragment extends Fragment {
     	}
     };
 
-    private synchronized void updateUIWeightStatistics() {
+    private void updateUIWeightStatistics() {
     	
     	if (!weightChanges.isEmpty()) {
     		// basic
@@ -305,7 +310,7 @@ public class StatisticsFragment extends Fragment {
         return weightChangesList;
 	}
     
-	private void getDateWeightMap() {
+	private synchronized void getDateWeightMap() {
 		DBAdapter db = new DBAdapter(getActivity());
 		db.open();        
 		Cursor weightsCursor = db.getAllWeights(1000, "desc");
